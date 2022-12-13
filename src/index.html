@@ -1,14 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Basic HTML/Tailwind starter</title>
-    <meta name="description" content="Basic HTML/Tailwind starter" />
-    <meta name="author" content="Daily Dev Tips" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Basic HTML/Tailwind starter</title>
+  <meta name="description" content="Basic HTML/Tailwind starter" />
+  <meta name="author" content="Daily Dev Tips" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<header style="background: #2e3135" class="flex flex-row items-center w-full h-20 font-neue">
+  <nav class="w-full">
+    <ul class="w-full flex-row flex justify-end h-full">
+      <li class="mr-auto text-3xl pl-6">
+        <a href="# " class="px-2 w-full py-1 text-white font-semibold">My world</a>
+      </li>
+      <li class="text-2xl">
+        <a href="# " class="px-2 py-1 text-white font-semibold">Galerija</a>
+      </li>
+      <li class="text-2xl">
+        <a href="# " class="px-2 py-1 text-white font-semibold">Paslaugos</a>
+      </li>
+      <li class="text-2xl"><a href="# " class="px-2 py-1 text-white font-semibold">Kainos</a></li>
+      <li class="text-2xl">
+        <a href="# " class="px-2 py-1 text-white font-semibold">Atsiliepimai</a>
+      </li>
+      <li class="text-2xl">
+        <a href="# " class="px-2 py-1 text-white font-semibold">Kontaktai</a>
+      </li>
+      <li class="pr-6 text-2xl">
+        <a href="# " style="min-inline-size: max-content" class="px-2 py-1 text-white font-semibold">Apie mus</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <body>
-    <div class="w-screen h-screen bg-daily-dev-tips flex items-center justify-center">Welcome</div>
+    <div class="relative text-white flex justify-start items-center">
+      <div class="absolute center pl-12 text-6xl max-w-[774px]">
+        PAŽINK PASAULIO GAMTA SU “MY WORLD” BENDRUOMENĘ
+      </div>
+      <img src="./thumbnail.jpeg" width="100%" style="height: 802px" />
+    </div>
+    <div class="absolute top-[1400px] w-full z-10 text-white flex justify-center items-center">
+      <div class="absolute flex justify-center text-6xl w-full h-full pt-10">
+        <p>PAŽINK PASAULIO GAMTA SU “MY WORLD” BENDRUOMENĘ</p>
+      </div>
+      <button
+        style="background-color: rgba(255, 255, 255, 0.5)"
+        class="rounded-full absolute flex justify-center text-6xl p-4 bg-slate-300 self-end mb-16"
+      >
+        Pirkti
+      </button>
+      <img src="./thumbnail3.jpeg" width="100%" style="height: 336px" />
+    </div>
+    <div class="relative text-white flex justify-start w-full items-start">
+      <div class="absolute center px-6 text-6xl w-full pt-10">
+        <h2 class="pb-5">Partneriai:</h2>
+        <div class="flex flex-row w-full h-full justify-between">
+          <div
+            style="background-color: rgba(255, 255, 255, 0.5)"
+            class="flex max-w-[421px] max-h-[220px] bg-white rounded-3xl"
+          >
+            <div class="opacity-100">
+              <img class="opacity-100" src="AirBaltic-logo.png" alt="" />
+            </div>
+          </div>
+          <div
+            style="background-color: rgba(255, 255, 255, 0.5)"
+            class="flex max-w-[421px] max-h-[220px] bg-white rounded-3xl"
+          >
+            <img class="opacity-100" src="Booking-Logo.png" />
+          </div>
+          <div
+            style="background-color: rgba(255, 255, 255, 0.5)"
+            class="flex max-w-[421px] max-h-[220px] bg-white rounded-3xl"
+          >
+            <img class="opacity-100" src="Google-logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute flex justify-center items-end px-6 text-6xl w-full h-full pt-20">
+        <img src="Untitled-11.png" alt="" />
+      </div>
+
+      <img src="./thumbnail2.jpeg" width="100%" />
+    </div>
   </body>
+  <footer class="text-center text-white bg-black">
+    <nav>
+      <div class="border-b py-4 border-b-white flex items-center h-100 justify-center">
+        My world
+      </div>
+      <ul class="flex flex-col items-start pt-4">
+        <li><a href="#" class="px-2 py-1 font-semibold">Pagrindiniai klausimai</a></li>
+      <li><a href="#" class="px-2 py-1 font-semibold">Mobiliems skirta versija</a></li>
+      <li><a href="#" class="px-2 py-1 font-semibold">Klientų aptarnavimo centras</a></li>
+      <li><a href="#" class="px-2 py-1 font-semibold">D.U.K</a></li>
+    </ul>
+  </nav>
+  </footer>
+
 </html>

@@ -3,12 +3,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'daily-dev-tips': "#F89283"
-      }
+        "daily-dev-tips": "#F89283",
+      },
+      fontFamily: {
+        neue: ["Comic-Neue", "sans-serif"],
+      },
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
