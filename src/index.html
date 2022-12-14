@@ -10,83 +10,149 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <header style="background: #2e3135" class="flex flex-row items-center w-full h-20 font-neue">
-  <nav class="w-full">
-    <ul class="w-full flex-row flex justify-end h-full">
-      <li class="mr-auto text-3xl pl-6">
-        <a href="# " class="px-2 w-full py-1 text-white font-semibold">My world</a>
+  <nav class="w-full flex-row items-center flex">
+    <div class="mr-auto text-3xl pl-6" style="min-inline-size: fit-content">
+      <a href="#" class="px-2 w-full py-1 text-white font-semibold">My world</a>
+    </div>
+    <ul class="w-full hidden lg:flex flex-row justify-end h-full">
+      <li class="text-2xl">
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Galerija</a>
       </li>
       <li class="text-2xl">
-        <a href="# " class="px-2 py-1 text-white font-semibold">Galerija</a>
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Paslaugos</a>
       </li>
       <li class="text-2xl">
-        <a href="# " class="px-2 py-1 text-white font-semibold">Paslaugos</a>
-      </li>
-      <li class="text-2xl"><a href="# " class="px-2 py-1 text-white font-semibold">Kainos</a></li>
-      <li class="text-2xl">
-        <a href="# " class="px-2 py-1 text-white font-semibold">Atsiliepimai</a>
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Kainos</a>
       </li>
       <li class="text-2xl">
-        <a href="# " class="px-2 py-1 text-white font-semibold">Kontaktai</a>
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Atsiliepimai</a>
+      </li>
+      <li class="text-2xl">
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Kontaktai</a>
       </li>
       <li class="pr-6 text-2xl">
-        <a href="# " style="min-inline-size: max-content" class="px-2 py-1 text-white font-semibold">Apie mus</a
+        <a href="./link.html" style="min-inline-size: max-content" class="px-2 py-1 text-white font-semibold">Apie mus</a
           >
         </li>
       </ul>
+      <!-- mobile menu -->
+      <div class="h-12 w-20 flex gap-3 flex-col pr-4" onclick="myFunction()">
+        <div class="flex bg-white h-4 w-full"></div>
+        <div class="flex bg-white h-4 w-full"></div>
+        <div class="flex bg-white h-4 w-full"></div>
+      </div>
     </nav>
+    <div
+      style="background: rgba(0, 0, 0, 0.58)"
+      class="fixed w-[300px] h-[500px] hidden right-0 top-[80px] z-20"
+      id="menu"
+    >
+      <ul class="w-full flex flex-col gap-10 justify-end h-full p-16 pt-2">
+        <li class="text-2xl">
+          <a href="./link.html" class="px-2 py-1 text-white font-semibold">Galerija</a>
+      </li>
+      <li class="text-2xl">
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Paslaugos</a>
+      </li>
+      <li class="text-2xl">
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Kainos</a>
+      </li>
+      <li class="text-2xl">
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Atsiliepimai</a>
+      </li>
+      <li class="text-2xl">
+        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Kontaktai</a>
+      </li>
+      <li class="pr-6 text-2xl">
+        <a href="./link.html" style="min-inline-size: max-content" class="px-2 py-1 text-white font-semibold">Apie mus</a
+          >
+        </li>
+      </ul>
+    </div>
   </header>
 
   <body>
     <div class="relative text-white flex justify-start items-center">
-      <div class="absolute center pl-12 text-6xl max-w-[774px]">
+      <div class="absolute center lg:pl-12 pl-6 lg:text-6xl text-xl max-w-[774px]">
         PAŽINK PASAULIO GAMTA SU “MY WORLD” BENDRUOMENĘ
       </div>
-      <img src="./thumbnail.jpeg" width="100%" style="height: 802px" />
+      <img src="./thumbnail.jpeg" width="100%" class="lg:h-[802px] h-[370px]" />
     </div>
-    <div class="absolute top-[1400px] w-full z-10 text-white flex justify-center items-center">
-      <div class="absolute flex justify-center text-6xl w-full h-full pt-10">
-        <p>PAŽINK PASAULIO GAMTA SU “MY WORLD” BENDRUOMENĘ</p>
-      </div>
-      <button
-        style="background-color: rgba(255, 255, 255, 0.5)"
-        class="rounded-full absolute flex justify-center text-6xl p-4 bg-slate-300 self-end mb-16"
-      >
-        Pirkti
-      </button>
-      <img src="./thumbnail3.jpeg" width="100%" style="height: 336px" />
-    </div>
-    <div class="relative text-white flex justify-start w-full items-start">
-      <div class="absolute center px-6 text-6xl w-full pt-10">
-        <h2 class="pb-5">Partneriai:</h2>
-        <div class="flex flex-row w-full h-full justify-between">
-          <div
-            style="background-color: rgba(255, 255, 255, 0.5)"
-            class="flex max-w-[421px] max-h-[220px] bg-white rounded-3xl"
-          >
-            <div class="opacity-100">
-              <img class="opacity-100" src="AirBaltic-logo.png" alt="" />
+
+    <div class="relative text-white flex justify-start w-full items-start lg:h-auto h-[2349px]">
+      <div class="absolute center lg:text-6xl text-xl w-full pt-10">
+        <div class="px-6">
+          <h2 class="pb-5">Partneriai:</h2>
+          <div class="flex flex-row w-full h-full gap-3 justify-between">
+            <div
+              style="background-color: rgba(255, 255, 255, 0.5)"
+              class="flex max-w-[421px] max-h-[220px] bg-white lg:rounded-3xl rounded-full p-3"
+            >
+              <div class="opacity-100">
+                <img class="opacity-100" src="AirBaltic-logo.png" alt="" />
+              </div>
+            </div>
+            <div
+              style="background-color: rgba(255, 255, 255, 0.5)"
+              class="flex max-w-[421px] max-h-[220px] bg-white lg:rounded-3xl rounded-full p-6"
+            >
+              <img class="opacity-100" src="Booking-Logo.png" />
+            </div>
+            <div
+              style="background-color: rgba(255, 255, 255, 0.5)"
+              class="flex max-w-[421px] max-h-[220px] bg-white lg:rounded-3xl rounded-full p-3"
+            >
+              <img class="opacity-100" src="Google-logo.png" alt="" />
             </div>
           </div>
+        </div>
+
+        <!-- banner -->
+        <div class="relative w-full z-10 text-white pt-8 flex justify-center items-center">
           <div
-            style="background-color: rgba(255, 255, 255, 0.5)"
-            class="flex max-w-[421px] max-h-[220px] bg-white rounded-3xl"
+            class="absolute flex justify-center lg:text-6xl text-xl w-full h-full pt-10 text-center lg:px-60"
           >
-            <img class="opacity-100" src="Booking-Logo.png" />
+            <p>PAŽINK PASAULIO GAMTA SU “MY WORLD” BENDRUOMENĘ</p>
           </div>
-          <div
+          <button
             style="background-color: rgba(255, 255, 255, 0.5)"
-            class="flex max-w-[421px] max-h-[220px] bg-white rounded-3xl"
+            class="rounded-full absolute flex justify-center lg:text-6xl text-xl p-4 bg-slate-300 self-end lg:mb-16 mb-4"
           >
-            <img class="opacity-100" src="Google-logo.png" alt="" />
+            Pirkti dabar
+          </button>
+          <img src="./thumbnail3.jpeg" width="100%" class="max-h-[336px]" />
+        </div>
+
+        <div
+          class="relative flex justify-center items-center gap-7 lg:flex-row lg:hidden flex-col px-6 text-6xl w-full h-full pt-20"
+        >
+          <img src="Vector.png" alt="" />
+          <img src="Vector2.png" alt="" />
+          <img src="Vector3.png" alt="" />
+          <img src="Vector4.png" alt="" />
+          <img src="Vector5.png" alt="" />
+          <img src="Vector6.png" alt="" />
+        </div>
+        <!-- desktop -->
+        <div
+          class="relative hidden justify-center items-center lg:flex-col w-full lg:flex px-6 text-6xl h-full pt-20"
+        >
+          <div class="flex gap-7">
+            <img src="Vector.png" alt="" />
+            <img src="Vector2.png" alt="" />
+            <img src="Vector3.png" alt="" />
+          </div>
+          <div class="flex gap-7">
+            <img src="Vector4.png" alt="" />
+            <img src="Vector5.png" alt="" />
+          </div>
+          <div class="flex gap-7">
+            <img src="Vector6.png" alt="" />
           </div>
         </div>
       </div>
 
-      <div class="absolute flex justify-center items-end px-6 text-6xl w-full h-full pt-20">
-        <img src="Untitled-11.png" alt="" />
-      </div>
-
-      <img src="./thumbnail2.jpeg" width="100%" />
+      <img src="./thumbnail2.jpeg" class="h-[2349px] lg:h-auto" width="100%" />
     </div>
   </body>
   <footer class="text-center text-white bg-black">
@@ -95,12 +161,28 @@
         My world
       </div>
       <ul class="flex flex-col items-start pt-4">
-        <li><a href="#" class="px-2 py-1 font-semibold">Pagrindiniai klausimai</a></li>
-      <li><a href="#" class="px-2 py-1 font-semibold">Mobiliems skirta versija</a></li>
-      <li><a href="#" class="px-2 py-1 font-semibold">Klientų aptarnavimo centras</a></li>
-      <li><a href="#" class="px-2 py-1 font-semibold">D.U.K</a></li>
+        <li><a href="./link.html" class="px-2 py-1 font-semibold">Pagrindiniai klausimai</a></li>
+      <li><a href="./phone.html" class="px-2 py-1 font-semibold">Mobiliems skirta versija</a></li>
+      <li>
+        <a href="./link.html" class="px-2 py-1 font-semibold">Klientų aptarnavimo centras</a>
+      </li>
+      <li><a href="./link.html" class="px-2 py-1 font-semibold">D.U.K</a></li>
     </ul>
   </nav>
   </footer>
+
+  <script>
+    let isOpen = false;
+
+    function myFunction() {
+      if (isOpen) {
+        document.getElementById("menu").style.display = "none";
+        isOpen = false;
+      } else {
+        document.getElementById("menu").style.display = "flex";
+        isOpen = true;
+      }
+    }
+  </script>
 
 </html>
