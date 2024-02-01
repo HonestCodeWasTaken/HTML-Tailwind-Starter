@@ -1,176 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <title>Basic HTML/Tailwind starter</title>
-  <meta name="description" content="Basic HTML/Tailwind starter" />
-  <meta name="author" content="Daily Dev Tips" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<header style="background: #2e3135" class="flex flex-row items-center w-full h-20 font-neue">
-  <nav class="w-full flex-row items-center flex">
-    <div class="mr-auto text-3xl pl-6" style="min-inline-size: fit-content">
-      <a href="#" class="px-2 w-full py-1 text-white font-semibold">My world</a>
-    </div>
-    <ul class="w-full hidden lg:flex flex-row justify-end h-full">
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Galerija</a>
-      </li>
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Paslaugos</a>
-      </li>
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Kainos</a>
-      </li>
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Atsiliepimai</a>
-      </li>
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Kontaktai</a>
-      </li>
-      <li class="pr-6 text-2xl">
-        <a href="./link.html" style="min-inline-size: max-content" class="px-2 py-1 text-white font-semibold">Apie mus</a
-          >
-        </li>
-      </ul>
-      <!-- mobile menu -->
-      <div class="h-12 w-20 flex gap-3 flex-col pr-4 lg:hidden" onclick="myFunction()">
-        <div class="flex bg-white h-4 w-full"></div>
-        <div class="flex bg-white h-4 w-full"></div>
-        <div class="flex bg-white h-4 w-full"></div>
-      </div>
-    </nav>
-    <div
-      style="background: rgba(0, 0, 0, 0.58)"
-      class="fixed w-[300px] h-[500px] hidden right-0 top-[80px] z-20"
-      id="menu"
-    >
-      <ul class="w-full flex flex-col gap-10 justify-end h-full p-16 pt-2">
-        <li class="text-2xl">
-          <a href="./link.html" class="px-2 py-1 text-white font-semibold">Galerija</a>
-      </li>
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Paslaugos</a>
-      </li>
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Kainos</a>
-      </li>
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Atsiliepimai</a>
-      </li>
-      <li class="text-2xl">
-        <a href="./link.html" class="px-2 py-1 text-white font-semibold">Kontaktai</a>
-      </li>
-      <li class="pr-6 text-2xl">
-        <a href="./link.html" style="min-inline-size: max-content" class="px-2 py-1 text-white font-semibold">Apie mus</a
-          >
-        </li>
-      </ul>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic HTML/Tailwind starter</title>
+    <meta name="description" content="Basic HTML/Tailwind starter" />
+    <meta name="author" content="Daily Dev Tips" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
   <body>
-    <div class="relative text-white flex justify-start items-center">
-      <div class="absolute center lg:pl-12 pl-6 lg:text-6xl text-xl max-w-[774px]">
-        PAŽINK PASAULIO GAMTA SU “MY WORLD” BENDRUOMENĘ
-      </div>
-      <img src="./thumbnail.jpeg" width="100%" class="lg:h-[802px] h-[370px]" />
-    </div>
-
-    <div class="relative text-white flex justify-start w-full items-start lg:h-auto h-[2349px]">
-      <div class="absolute center lg:text-6xl text-xl w-full pt-10">
-        <div class="px-6">
-          <h2 class="pb-5">Partneriai:</h2>
-          <div class="flex flex-row w-full h-full gap-3 justify-between">
-            <div
-              style="background-color: rgba(255, 255, 255, 0.5)"
-              class="flex max-w-[421px] max-h-[220px] bg-white lg:rounded-3xl rounded-full p-3"
+    <div className="flex h-full w-full flex-col">
+      <div className="mx-auto max-w-sm overflow-hidden rounded-lg bg-white shadow-xl">
+        <img
+          src="https://ledsiena.lt/wp-content/uploads/2024/01/112-1-xn75d-4h-56642054857.jpg"
+          alt=""
+          className="min-h-[200px] w-full object-cover"
+        />
+        <div className="p-5">
+          <h3 className="mb-2 text-xl font-medium text-gray-900">XN+ Series XN75D-4H</h3>
+          <ul className="mb-4 list-disc pl-5 text-base text-gray-600">
+            <li>VAP400 (Vestel Android Platform 400)</li>
+            <li>2 GB DDR4 / 16 GB eMMC</li>
+            <li>Resolution: 3840x2160 (UHD)</li>
+            <li>Brightness: 500 cd/m²</li>
+            <li>Operation: 24/7</li>
+            <li>
+              Interface: HDMI 2.0 / USB 3.0 / RS232 / RJ45 (Gigabit Ethernet) / RJ12 / IR / MicroSD
+              / Audio / Speaker
+            </li>
+            <li>Application Areas: Retail, Entertainment, Corporate, Control Rooms</li>
+          </ul>
+          <div className="mb-4 flex">
+            <span
+              className="mr-2 rounded-full bg-red-500 px-3 py-1 text-sm font-semibold text-white"
             >
-              <div class="opacity-100">
-                <img class="opacity-100" src="AirBaltic-logo.png" alt="" />
-              </div>
-            </div>
-            <div
-              style="background-color: rgba(255, 255, 255, 0.5)"
-              class="flex max-w-[421px] max-h-[220px] bg-white lg:rounded-3xl rounded-full p-6"
+              75"
+            </span>
+            <span
+              className="mr-2 rounded-full bg-red-500 px-3 py-1 text-sm font-semibold text-white"
             >
-              <img class="opacity-100" src="Booking-Logo.png" />
-            </div>
-            <div
-              style="background-color: rgba(255, 255, 255, 0.5)"
-              class="flex max-w-[421px] max-h-[220px] bg-white lg:rounded-3xl rounded-full p-3"
-            >
-              <img class="opacity-100" src="Google-logo.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <!-- banner -->
-        <div class="relative w-full z-10 text-white pt-8 flex justify-center items-center">
-          <div
-            class="absolute flex justify-center lg:text-6xl text-xl w-full h-full pt-10 text-center lg:px-60"
-          >
-            <p>PAŽINK PASAULIO GAMTA SU “MY WORLD” BENDRUOMENĘ</p>
+              86"
+            </span>
+            <span className="rounded-full bg-red-500 px-3 py-1 text-sm font-semibold text-white">
+              98"
+            </span>
           </div>
           <button
-            style="background-color: rgba(255, 255, 255, 0.5)"
-            class="rounded-full absolute flex justify-center lg:text-6xl text-xl p-4 bg-slate-300 self-end lg:mb-16 mb-4"
-            onclick="alert('perkam')"
+            className="w-full rounded-lg bg-red-600 p-3 text-sm font-semibold text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50"
           >
-            Pirkti dabar
+            INQUIRY TO BUY
           </button>
-          <img src="./thumbnail3.jpeg" width="100%" class="max-h-[336px]" />
-        </div>
-
-        <div
-          class="relative flex justify-center items-center gap-7 lg:flex-row lg:hidden flex-col px-6 text-6xl w-full h-full pt-20"
-        >
-          <img src="Vector.png" alt="" />
-          <img src="Vector2.png" alt="" />
-          <img src="Vector3.png" alt="" />
-          <img src="Vector4.png" alt="" />
-          <img src="Vector5.png" alt="" />
-          <img src="Vector6.png" alt="" />
-        </div>
-        <!-- desktop -->
-        <div
-          class="relative hidden justify-center items-center lg:flex-col w-full lg:flex px-6 text-6xl h-full pt-20"
-        >
-          <div class="flex gap-7">
-            <img src="Vector.png" alt="" />
-            <img src="Vector2.png" alt="" />
-            <img src="Vector3.png" alt="" />
-          </div>
-          <div class="flex gap-7">
-            <img src="Vector4.png" alt="" />
-            <img src="Vector5.png" alt="" />
-          </div>
-          <div class="flex gap-7">
-            <img src="Vector6.png" alt="" />
-          </div>
         </div>
       </div>
-
-      <img src="./thumbnail2.jpeg" class="h-[2349px] lg:h-auto" width="100%" />
     </div>
   </body>
-  <footer class="text-center text-white bg-black">
-    <nav>
-      <div class="border-b py-4 border-b-white flex items-center h-100 justify-center">
-        My world
-      </div>
-      <ul class="flex flex-col items-start pt-4">
-        <li><a href="./link.html" class="px-2 py-1 font-semibold">Pagrindiniai klausimai</a></li>
-      <li><a href="./phone.html" class="px-2 py-1 font-semibold">Mobiliems skirta versija</a></li>
-      <li>
-        <a href="./link.html" class="px-2 py-1 font-semibold">Klientų aptarnavimo centras</a>
-      </li>
-      <li><a href="./link.html" class="px-2 py-1 font-semibold">D.U.K</a></li>
-    </ul>
-  </nav>
-  </footer>
 
   <script>
     let isOpen = false;
@@ -185,5 +69,4 @@
       }
     }
   </script>
-
 </html>

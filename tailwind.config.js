@@ -14,4 +14,8 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  corePlugins: {
+    preflight: false,
+    // boxShadow: false,
+  },
 };
